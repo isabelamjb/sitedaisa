@@ -3,69 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>Beauty Secrets — Maquiagem, Beleza e Autocuidado</title>
+
+  <!-- Importação de fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilização CSS -->
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FFF0F5; /* Rosa claro */
+      color: #4A4A4A;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      padding: 20px 10px;
+    }
+
     header {
-      background-color: #183C63;
-      color: #FFFFFF;
+      background-color: #FFB6C1; /* Rosa claro */
+      color: #5C3A4D;
       text-align: center;
       max-width: 800px;
-      margin: 0 auto;
-      padding: 16px;
+      margin: 0 auto 20px auto;
+      padding: 25px 15px;
+      border-radius: 20px;
+    }
+
+    header h1 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 0.95rem;
     }
 
     main {
       background-color: #FFFFFF;
-      color: #183C63;
+      color: #4A4A4A;
       max-width: 800px;
       margin: 0 auto;
-      padding: 16px;
+      padding: 25px;
+      border-radius: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .secao-titulo {
+      font-family: 'Comfortaa', cursive;
+      color: #2E8B57;
+      background-color: #E0F8F1; /* Verde-água claro */
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 1.15rem;
+      margin-bottom: 15px;
+      display: inline-block;
     }
 
     article {
       display: flex;
+      gap: 15px;
+      background-color: #FFFDE7; /* Amarelo claro */
+      padding: 18px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #FFF59D;
+      align-items: flex-start;
     }
 
     img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #FFB6C1; /* Rosa claro */
+    }
+
+    .conteudo-card {
+      width: 100%;
+    }
+
+    h2 {
+      font-family: 'Comfortaa', cursive;
+      color: #6B3E52;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
     }
 
     .artigo-autor {
-      font-weight: bold;
+      font-weight: 600;
+      color: #E67E22;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+    }
+
+    ol {
+      margin-left: 20px;
+      margin-bottom: 12px;
+      font-size: 0.92rem;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    button {
+      background-color: #FFF0F5; /* Rosa claro */
+      border: 1.5px solid #FFB6C1;
+      border-radius: 20px;
+      padding: 5px 12px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      margin-right: 6px;
+      color: #4A4A4A;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+      background-color: #FFB6C1;
+    }
+
+    .container-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      margin-top: 12px;
+      border: 3px solid #E0F8F1;
+    }
+
+    .container-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 15px;
+      color: #777;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <h1>Meu blog tech</h1>
-    <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    <h1>BEAUTY SECRETS</h1>
+    <p>Maquiagem • Beleza • Autocuidado</p>
   </header>
 
+  <!-- Conteúdo Principal -->
   <main>
-    <article>
-      <img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-      <div>
-        <h2>Meu primeiro post</h2>
-        <p class="artigo-autor">Por: Isabela Matos</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-      </div>
-    </article>
 
-    <article>
-      <img src="imagem-blog.png" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-      <div>
-        <h2>Meu segundo post</h2>
-        <p class="artigo-autor">Por: Isabela Matos</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
+    <!-- Primeira Seção -->
+    <section>
+      <h2 class="secao-titulo">Bem-vindos ao Beauty Secrets!</h2>
+      <p>Bem-vinda ao Beauty Secrets, um cantinho para quem ama maquiagem, beleza e autocuidado! Aqui você vai encontrar dicas simples para aprender mais sobre maquiagem, cuidar da pele e descobrir novos estilos.</p>
+      <p>Eu sou Isabela Matos de Jesus Bulcão, mas podem me chamar de Isa! Criei o Beauty Secrets para compartilhar dicas, inspirações e tudo que pode deixar sua rotina de beleza ainda mais divertida.</p>
+      <p>Vamos descobrir alguns segredos de beleza?</p>
+    </section>
+
+    <!-- Segunda Seção -->
+    <section>
+      <h2 class="secao-titulo">Posts & Segredos de Beleza</h2>
+
+      <!-- Primeiro Artigo -->
+      <article>
+        <img src="imagem-blog.png" alt="Imagem do post de maquiagem">
+        <div class="conteudo-card">
+          <h2>Dicas de Maquiagem</h2>
+          <p class="artigo-autor">Por: Isabela Matos</p>
+          <p>Maquiagem é uma forma de se expressar, testar estilos e realçar aquilo que você mais gosta em você. Não existe uma única maneira certa de se maquiar: o importante é encontrar o que combina com você!</p>
+          <p><strong>Ordem dos produtos:</strong> Preparação → primer → base → corretivo → pó → blush → bronzer/contorno → iluminador → sobrancelhas → olhos → máscara de cílios → boca.</p>
+          <button>🩷 <span>0</span></button>
+          <button>👍 <span>0</span></button>
+        </div>
+      </article>
+
+      <!-- Segundo Artigo -->
+      <article>
+        <img src="imagem-blog2.png" alt="Imagem do post de autocuidado">
+        <div class="conteudo-card">
+          <h2>Rotina de Autocuidado</h2>
+          <p class="artigo-autor">Por: Isabela Matos</p>
+          <p>Cuidar da beleza também é cuidar de si. E não precisa ser complicado! Uma rotina simples de pele: Limpar → hidratar → proteger. E não esqueça do protetor solar durante o dia.</p>
+          <p>Lave seus pincéis regularmente e use hidratante labial para manter os lábios confortáveis.</p>
+          <button>🩷 <span>0</span></button>
+          <button>👍 <span>0</span></button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Terceira Seção -->
+    <section>
+      <h2 class="secao-titulo">Beauty Inspiration</h2>
+      <p>Hailey Bieber é uma grande referência no mundo da beleza, principalmente por seu estilo de maquiagem mais natural, iluminado e delicado. Por isso, escolhi um vídeo de maquiagem dela para o Beauty Secrets! Assista ao vídeo e aproveite as dicas!</p>
+      
+      <div class="container-video">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo de Maquiagem Hailey Bieber" allowfullscreen></iframe>
       </div>
-    </article>
+    </section>
+
+    <!-- Quarta Seção -->
+    <section>
+      <h2 class="secao-titulo">Dicas & Contato</h2>
+      
+      <p><strong>5 erros que podem acabar com sua maquiagem:</strong></p>
+      <ol>
+        <li>Não preparar a pele.</li>
+        <li>Usar produtos em excesso.</li>
+        <li>Escolher a base errada.</li>
+        <li>Não limpar os pincéis.</li>
+        <li>Dormir de maquiagem.</li>
+      </ol>
+
+      <div class="conteudo-card">
+        <p><strong>Pergunte para a Isa:</strong> Tem alguma dúvida sobre maquiagem? Mande uma mensagem!</p>
+        <p>E-mail para contato: <u>isabeautysecrets@gmail.com</u></p>
+      </div>
+    </section>
+
   </main>
 
+  <!-- Rodapé -->
+  <footer>
+    <p>Criado por Isabela Matos de Jesus Bulcão — Isa</p>
+    <p>Maquiagem • Beleza • Autocuidado • Inspiração</p>
+    <p>Obrigada por visitar o Beauty Secrets!</p>
+  </footer>
+
+  <!-- Programação JavaScript dos Botões -->
   <script>
     const botoes = document.querySelectorAll("button");
 
@@ -87,5 +276,8 @@
       }
     });
   </script>
+
 </body>
 </html>
+
+  
