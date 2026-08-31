@@ -28,6 +28,10 @@ A partir da base do curso, o código foi personalizado e ganhou novas estruturas
 - **Interatividade:** Botões de like funcionais para os leitores reagirem aos posts.
 - **Área de Interação:** Espaço para comentários e dúvidas.
 
+### O que foi autoral?
+
+Todos os textos e dicas presentes neste projeto são totalmente autorais, elaborados a partir de pesquisas na web e inspirados no vídeo de rotina de beleza da Hailey Bieber para a Vogue. As imagens utilizadas no site foram geradas através de inteligência artificial via Gemini, utilizando direcionamentos criados por mim.
+
 ---
 
 ## Arquivos do Repositório
